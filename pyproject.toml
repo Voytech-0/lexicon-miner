@@ -1,0 +1,16 @@
+[project]
+name = "lexicon-miner"
+version = "0.1.0"
+description = "Language learning from native media: transcribe, translate, dictionary, Anki"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "faster-whisper>=1.1",
+    "av>=15",  # wheel-only; faster-whisper's PyAV decode path is bypassed in pipeline.py
+    "numpy",
+    "mlx-lm",
+    "spacy>=3.8",
+    "streamlit>=1.40",
+]
+
+[tool.uv]
+package = false

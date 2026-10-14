@@ -1,0 +1,11 @@
+# Language of the media you learn from (ISO 639-1 code).
+# Each source language gets its own data/<source>/ (db, Media, clips).
+source = "nl"
+
+# Language translations go into. Translations already stored in
+# data/<source>/ stay in the old target if you change this later.
+target = "en"
+
+# Optional overrides when the default spaCy pipeline name doesn't fit:
+# spacy_model = "nl_core_news_md"
+# spacy_version = "3.8.0"
